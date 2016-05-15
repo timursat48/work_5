@@ -29,20 +29,3 @@ void quadratic_equation (float a, float b, float c)
     }
 }
 
-int main ()
-{
-
-    float  a, b, c;
-    printf("Input a: ");
-    scanf("%f", &a);
-    printf ("Input b: ");
-    scanf("%f", &b);
-    printf("Input c: ");
-    scanf("%f", &c);
-    quadratic_equation (a, b, c);
-
-    getchar();
-    getchar();
-    return 0;
-}
-
