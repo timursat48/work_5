@@ -5,14 +5,14 @@
 int main ()
 {
 
-    float  a, b, c;
+    double  a, b, c, x1, x2, d;
     printf("Input a: ");
-    scanf("%f", &a);
+    scanf("%lf", &a);
     printf ("Input b: ");
-    scanf("%f", &b);
+    scanf("%lf", &b);
     printf("Input c: ");
-    scanf("%f", &c);
-    quadratic_equation (a, b, c);
+    scanf("%lf", &c);
+    quadratic_equation (a, b, c, &x1, &x2, &d);
 
     getchar();
     getchar();
