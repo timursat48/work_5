@@ -1,0 +1,36 @@
+#include<ctest.h>
+#include<quadratic.h>
+CTEST(quadr_suite,no_root)
+{
+	floata=0,b=0,c=0;
+	//floatd,x1,x2;
+	introots=quadratic_equation(a,b,c),ex_roots=-2;
+	ASSERT_EQUAL(ex_roots,roots);
+}
+CTEST(quadr_suite,no_real_root)
+{
+	floata=4,b=0,c=3;
+	//floatd;//x1,x2;
+	introots=quadratic_equation(a,b,c),ex_roots=-1/*,ex_d=-48*/;
+	ASSERT_EQUAL(ex_roots,roots);
+	//ASSERT_DBL_NEAR(ex_d,d);
+}
+CTEST(quadr_suite,one_root)
+{
+	floata=1,b=-2,c=1;
+	//floatd,x1;//x2;
+	introots=quadratic_equation(a,b,c),ex_roots=1/*,ex_d=0,ex_x1=1*/;
+	ASSERT_EQUAL(ex_roots,roots);
+	//ASSERT_DBL_NEAR(ex_d,d);
+	//ASSERT_DBL_NEAR(ex_x1,x1);
+}
+CTEST(quadr_suite,all_roots)
+{
+	floata=3,b=-4,c=1;
+	//floatd,x1,x2;
+	introots=quadratic_equation(a,b,c),ex_roots=2/*,ex_d=4,ex_x1=0.33,ex_x2=1*/;
+	ASSERT_EQUAL(ex_roots,roots);
+	//ASSERT_DBL_NEAR(ex_d,d);
+	//ASSERT_DBL_NEAR(ex_x1,x1);
+	//ASSERT_DBL_NEAR(ex_x2,x2);
+}

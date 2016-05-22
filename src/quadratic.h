@@ -1,1 +1,1 @@
-void quadratic_equation (float a, float b, float c);
+int quadratic_equation (float a, float b, float c);
